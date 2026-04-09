@@ -3,7 +3,6 @@ name: Build and publish FHIR IG
 on:
   push:
     branches:
-      - main
       - 0.1.0-dev
   workflow_dispatch:
 
@@ -12,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Set up Java
@@ -20,6 +19,23 @@ jobs:
         with:
           distribution: temurin
           java-version: 17
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Cache FHIR package cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.fhir
+          key: fhir-cache-${{ runner.os }}-${{ hashFiles('**/ig.ini') }}
+          restore-keys: |
+            fhir-cache-${{ runner.os }}-
+
+      - name: Install SUSHI
+        run: npm install -g fsh-sushi
 
       - name: Download IG Publisher
         run: |
@@ -31,9 +47,9 @@ jobs:
         run: |
           java -Xmx4g -jar tooling/publisher.jar ig.ini
 
-      - name: Publish to gh-pages
+      - name: Publish to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./output
           publish_branch: gh-pages
+          publish_dir: ./output

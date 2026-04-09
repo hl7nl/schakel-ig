@@ -11,9 +11,12 @@ permissions:
   pages: write
   id-token: write
 
+
 jobs:
   build:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
 
     steps:
       - name: Setup JDK
@@ -40,8 +43,7 @@ jobs:
         run: curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o publisher.jar
 
       - name: Run IG Publisher
-        run: |
-          java -jar publisher.jar -ig ig.ini
+        run: java -jar publisher.jar -ig ig.ini
 
       - name: Setup Pages
         uses: actions/configure-pages@v4

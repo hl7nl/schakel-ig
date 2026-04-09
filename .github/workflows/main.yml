@@ -44,7 +44,7 @@ jobs:
 
       - name: Run IG Publisher
         run: |
-          java -Xmx4g -jar tooling/publisher.jar ig.ini -no-jekyll
+          java -Xmx4g -jar tooling/publisher.jar ./ig.ini -no-jekyll
 
       - name: Publish to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4

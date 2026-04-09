@@ -3,6 +3,7 @@ name: Build and publish FHIR IG
 on:
   push:
     branches:
+      - main
       - 0.1.0-dev
   workflow_dispatch:
 

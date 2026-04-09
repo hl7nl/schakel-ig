@@ -1,9 +1,10 @@
-## What is SCHAKEL about?
+### What is SCHAKEL about?
 
 SCHAKEL is a national FHIR Implementation Guide that provides implementable FHIR specifications for concrete healthcare information exchange use cases.
 
 It explains how real‑world use cases are represented in FHIR, including the required resources, profiles, relationships, and modelling choices, with the explicit goal of enabling consistent implementation by vendors.
 
+The name SCHAKEL was chosen because it simply fits what this guide is about: connecting things. We needed a name that was easy to remember, not tied to a specific use case or solution, and flexible enough to grow over time. Literally translated into English, *schakel* means *link* or *connection* (as in a link in a chain). Any acronym interpretation is secondary and mainly intended to support explanation when needed.
 
 ### Initial use case
 
@@ -11,13 +12,12 @@ The initial version of SCHAKEL starts with a concrete elaboration of the use cas
 
 While this use case provides the first concrete application, SCHAKEL is intentionally designed to be extended with additional use cases over time, reusing and building upon the same underlying modelling approach and building blocks.
 
-## Collaboration
+### Collaboration
 
 SCHAKEL is developed as a collaborative initiative involving multiple parties across the Dutch healthcare information landscape. The guide is developed jointly by Stichting LEGIO, NedXis, and Nictiz.
 Development and testing of SCHAKEL are supported by Interoplab, and the guide is currently published through HL7 Netherlands (HL7 NL).
 
-
-## Principles and commitments
+### Principles and commitments
 
 SCHAKEL is guided by a shared set of principles and commitments that shape how the guide is developed and how design decisions are made. These principles describe the intended balance between concrete use cases, implementability, reuse, and alignment with existing standards.
 

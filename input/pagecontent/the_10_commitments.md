@@ -4,8 +4,8 @@ These commitments articulate how SCHAKEL is developed, how design and modeling d
 
 ---
 
-1. **We start from concrete use cases**  
-SCHAKEL is developed from concrete healthcare information exchange use cases. These use cases are described in sufficient detail to support unambiguous interpretation and consistent implementation.
+1. **We start from real-world use cases**  
+SCHAKEL is developed from real-world healthcare information exchange use cases. These use cases are described in sufficient detail to support unambiguous interpretation and consistent implementation.
 
 2. **We translate use cases into implementable FHIR models**  
 For each use case, SCHAKEL explains how it can be represented in FHIR, including the required resources, profiles, relationships, and modeling choices needed to implement it in practice.
@@ -17,7 +17,7 @@ SCHAKEL reuses existing standards, profiles, and agreements wherever possible, i
 SCHAKEL follows the intent and information model of FHIR. Extensions, additional constraints, or deviations are introduced only when they are functionally necessary to support the use cases and are always explicitly documented and motivated.
 
 5. **We work with reusable and composable building blocks**  
-While use cases are described concretely, SCHAKEL deliberately defines reusable and composable building blocks—such as profiles and design patterns—that can be applied across multiple use cases and care settings.
+While use cases are described explicitly, SCHAKEL deliberately defines reusable and composable building blocks—such as profiles and design patterns—that can be applied across multiple use cases and care settings.
 
 6. **We make modeling and design choices explicit**  
 SCHAKEL documents modeling decisions, assumptions, and trade-offs explicitly. Where alternatives exist, these are described to support consistent interpretation by implementers.

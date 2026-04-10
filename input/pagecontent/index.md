@@ -20,6 +20,8 @@ SCHAKEL is intentionally designed to support the addition of further use cases o
 
 SCHAKEL is developed as a collaborative initiative involving Stichting LEGIO, NedXis, Nictiz, and NUTS. Development and testing are supported by Interoplab, and the guide is currently published through HL7 Netherlands (HL7 NL).
 
+At this stage, no final decisions have been made regarding the long‑term governance or definitive publication location of SCHAKEL. These aspects will be addressed as the guide evolves, in consultation with the relevant stakeholders.
+
 ### The 10 commitments of SCHAKEL
 
 SCHAKEL is guided by ten commitments that describe how the guide is developed and how decisions are made. They provide a stable reference for authors, reviewers, and implementers throughout the lifecycle of the guide.

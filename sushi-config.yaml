@@ -42,8 +42,8 @@ pages:
    index.md:
      title: Home
 
-   principles_commitments.md:
-     title: Principles and commitments
+   the_10__commitments.md:
+     title: The 10 commitments
 
 #
 #
@@ -70,7 +70,7 @@ pages:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
-  Principles and commitments: principles_commitments.html
+  The 10 commitments: the_10_commitments.html
   Artifacts: artifacts.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮

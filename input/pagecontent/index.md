@@ -10,15 +10,22 @@ SCHAKEL is explicitly practice‑driven. It is developed from a real and pressin
 
 Modeling choices are therefore made with a strong focus on feasibility and clarity. SCHAKEL explains not only what information is exchanged, but also how this can be implemented in FHIR while aligning with existing systems, workflows, and established standards such as FHIR R4 and Dutch core profiles.
 
-### Initial use case
+### Initial use cases
 
-The initial version of SCHAKEL focuses on information exchange between out‑of‑hours primary care (HAP) and long‑term care (VVT). This use case serves as a starting point to demonstrate how SCHAKEL principles are applied in practice.
+The initial version of SCHAKEL is based on two healthcare information exchange use cases.
 
-SCHAKEL is intentionally designed to support the addition of further use cases over time, building on the same modeling approach and reusable building blocks.
+The first use case concerns the exchange of treatment limitations and care decisions, based on the zib TreatmentDirective2. This use case builds on [an existing implementation guide published by IKNL](https://build.fhir.org/ig/IKNL/PZP-FHIR-R4/index.html) and serves as a starting point for SCHAKEL, demonstrating how established agreements can be reused and further concretized within a broader, reusable FHIR modelling framework.
+
+The second use case focuses on information exchange between out‑of‑hours primary care (HAP) and long‑term care (VVT). This use case is based on the Nuts [*“Zorgtoepassing HA‑VVT inzage dossier v1.0”*](https://wiki.nuts.nl/books/samenwerken-huisarts-en-thuiszorg/page/zorgtoepassing-ha-vvt-inzage-dossier-v10). Within SCHAKEL, this application is translated into a concrete, implementable FHIR use case, making the underlying agreements explicit in terms of resources, profiles, relationships, and modelling choices.
+
+Together, these use cases provide complementary perspectives and serve to ground SCHAKEL in real, implementable applications. SCHAKEL is intentionally designed to support the addition of further use cases over time, reusing and extending the same modelling approach and building blocks.
+
+More information on the use cases can be found on the [Use cases page](usecases.html).
+
 
 ### Collaboration
 
-SCHAKEL is developed as a collaborative initiative involving Stichting LEGIO, NedXis, Nictiz, and NUTS. Development and testing are supported by Interoplab, and the guide is currently published through HL7 Netherlands (HL7 NL).
+SCHAKEL is developed as a collaborative initiative involving Stichting LEGIO, NedXis, Nictiz, and Nuts . Development and testing are supported by Interoplab, and the guide is currently published through HL7 Netherlands (HL7 NL).
 
 At this stage, no final decisions have been made regarding the long‑term governance or definitive publication location of SCHAKEL. These aspects will be addressed as the guide evolves, in consultation with the relevant stakeholders.
 
